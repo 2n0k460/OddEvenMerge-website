@@ -34,7 +34,7 @@
 
 アプリのプライバシーポリシーについては、以下のページをご確認ください。
 
-* [プライバシーポリシーページへのリンク (例: ./privacy.html)]
+* [https://2n0k460.github.io/OddEvenMerge_support/privacy.html]
 
 ---
 
@@ -78,7 +78,7 @@ If you have any questions, bug reports, feedback, or comments about the app, ple
 
 Please review the app's privacy policy on the following page:
 
-* [Link to your Privacy Policy page (e.g., ./privacy.html)]
+* [https://2n0k460.github.io/OddEvenMerge_support/privacy.html]
 
 ---
 
