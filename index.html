@@ -1,129 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>OddEvenMerge Support</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OddEvenMerge - 奇数と偶数の新感覚マージパズルゲーム | 公式サポート</title>
+    <meta name="description" content="OddEvenMergeの公式サポートページです。ユニークな奇数偶数マージルールの遊び方、FAQ、戦略・コツ、お問い合わせ先はこちら。脳トレにも最適な無料数字パズルを今すぐ体験！">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/app-icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>OddEvenMerge サポート</h1>
+    <header>
+        <div class="container header-content">
+            <img src="images/app-icon.png" alt="OddEvenMerge アプリアイコン" class="app-icon-header">
+            <div>
+                <h1>OddEvenMerge</h1>
+                <p class="tagline">奇数と偶数が織りなす、新感覚マージパズル！</p>
+            </div>
+        </div>
+        <nav id="main-nav">
+            <div class="container nav-container">
+                <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="hamburger-icon"></span>
+                </button>
+                <ul id="nav-menu">
+                    <li><a href="#overview">概要</a></li>
+                    <li><a href="#how-to-play">遊び方</a></li>
+                    <li><a href="#tips">戦略・コツ</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#news">最新情報</a></li>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-<p>この度は「OddEvenMerge」をご利用いただき、誠にありがとうございます。<br>
-このページでは、アプリに関するサポート情報をご案内します。</p>
+    <main>
+        <section id="overview" class="hero">
+            <div class="container">
+                <h2>ようこそ OddEvenMerge の世界へ！</h2>
+                <p>『OddEvenMerge』は、奇数と偶数という“数字の性質”に着目した、新しい感覚のマージパズルゲームです。スワイプでタイルを動かし、同じ数字、あるいは奇数と偶数の異なる数字をマージ（合体）してスコアを伸ばしましょう！シンプルながら奥深い戦略が楽しめます。</p>
+                <div class="app-store-badge">
+                    <a href="https://apps.apple.com/jp/app/oddevenmerge-number-puzzle/id6745198218" target="_blank" rel="noopener noreferrer">
+                        <img src="images/app-store-badge.svg" alt="Download on the App Store">
+                    </a>
+                </div>
 
-<h2>アプリ概要</h2>
+                <div class="screenshots">
+                    <img src="images/screenshot1.png" alt="OddEvenMerge ゲーム画面1 - 盤面" class="fade-in-element">
+                    <img src="images/screenshot2.png" alt="OddEvenMerge ゲーム画面2 - スコア" class="fade-in-element">
+                    <img src="images/screenshot3.png" alt="OddEvenMerge ゲーム画面3 - ゲームオーバー" class="fade-in-element">
+                </div>
+            </div>
+        </section>
 
-<p>「OddEvenMerge」は、数字が書かれたタイルをスワイプして合体させていくシンプルなパズルゲームです。タイルの数字が「奇数」か「偶数」かによって、合体（マージ）のルールが変わるのが特徴です。</p>
+        <section id="how-to-play" class="how-to-play-section content-section">
+            <div class="container">
+                <h2>遊び方（基本ルール）</h2>
+                <div class="rules-grid">
+                    <div class="rule-card fade-in-element">
+                        <div class="rule-icon">↔️</div>
+                        <h3>スワイプ操作</h3>
+                        <p>盤面を上下左右にスワイプ！同じ方向のタイルがすべて移動またはマージされます。</p>
+                    </div>
+                    <div class="rule-card even-card fade-in-element">
+                        <div class="rule-icon">＝</div>
+                        <h3>同種マージ</h3>
+                        <p>同じ数字の偶数同士 (例: 2と2→2) または奇数同士 (例: 3と3→3) を重ねると、その数字のまま1つのタイルに！</p>
+                    </div>
+                    <div class="rule-card odd-card fade-in-element">
+                        <div class="rule-icon">➕</div>
+                        <h3>異種マージ (奇数+偶数)</h3>
+                        <p>奇数と偶数のタイル (例: 1と2→3) を重ねると、数字が合計された新しい奇数タイルに！これが高得点のカギ！</p>
+                    </div>
+                    <div class="rule-card fade-in-element">
+                        <div class="rule-icon">🆕</div>
+                        <h3>新しいタイル出現</h3>
+                        <p>スワイプ後、盤面の空いたマスに新しい数字タイル (1, 2, 3, 5, 8など) がランダムに出現します。</p>
+                    </div>
+                </div>
+                <p class="strategy-tip fade-in-element">盤面がいっぱいにならないように、常に数手先を読みながら戦略的にタイルをマージしてハイスコアを目指しましょう！</p>
+            </div>
+        </section>
 
-<ul>
-<li><strong>偶数 + 偶数</strong> または <strong>奇数 + 奇数</strong> → 同じ数字にマージ</li>
-<li><strong>奇数 + 偶数</strong> → 合計値にマージ</li>
-</ul>
+        <section id="tips" class="tips-section content-section">
+            <div class="container">
+                <h2>高得点を狙うための戦略・コツ</h2>
+                <div class="tip-item fade-in-element">
+                    <span class="tip-icon">🎯</span>
+                    <h4>隅を有効活用しよう</h4>
+                    <p>大きな数字のタイルは、盤面の隅や端に集めるように意識すると、他のタイルを動かすスペースを確保しやすく、整理された盤面を維持できます。</p>
+                </div>
+                <div class="tip-item fade-in-element">
+                    <span class="tip-icon">🔗</span>
+                    <h4>連鎖（コンボ）をイメージ</h4>
+                    <p>次のスワイプだけでなく、2手、3手先を読んで、複数のマージが連鎖するようにタイルを配置してみましょう。連鎖が決まった時の爽快感は格別です！</p>
+                </div>
+                <div class="tip-item fade-in-element">
+                    <span class="tip-icon">🧐</span>
+                    <h4>盤面全体のバランスを意識</h4>
+                    <p>特定のエリアに大きな数字が固まりすぎないように注意。常に盤面全体を見て、奇数と偶数のタイルのバランスを取りながらマージを進めましょう。</p>
+                </div>
+            </div>
+        </section>
 
-<p>ハイスコアを目指して、ぜひお楽しみください！</p>
+        <section id="faq" class="faq-section content-section">
+            <div class="container">
+                <h2>よくあるご質問 (FAQ)</h2>
+                <div class="faq-item fade-in-element">
+                    <button class="faq-question" aria-expanded="false">オフラインでも遊べますか？</button>
+                    <div class="faq-answer"><p>はい、OddEvenMergeは完全オフラインでお楽しみいただけます。いつでもどこでも、通信環境を気にせずプレイしてください！</p></div>
+                </div>
+                <div class="faq-item fade-in-element">
+                    <button class="faq-question" aria-expanded="false">広告はどのように表示されますか？</button>
+                    <div class="faq-answer"><p>ゲームオーバー時に、1ゲームにつき1回だけ、任意で広告を視聴することで盤面上のタイルをいくつか消去してゲームを継続できるリトライ機能があります。プレイを妨げる強制的な広告表示はありませんのでご安心ください。</p></div>
+                </div>
+                <div class="faq-item fade-in-element">
+                    <button class="faq-question" aria-expanded="false">スコア計算はどのようになっていますか？</button>
+                    <div class="faq-answer"><p>タイルをマージするたびにスコアが加算されます。特に、奇数と偶数をマージして新しい数字が生まれた場合や、連鎖してマージが起こった場合にはより高いスコアが得られる傾向にあります。どんどんマージしてハイスコアを目指しましょう！</p></div>
+                </div>
+                <div class="faq-item fade-in-element">
+                    <button class="faq-question" aria-expanded="false">「Gengarサウンド」とは何ですか？</button>
+                    <div class="faq-answer"><p>特定のスコア（94点！）に到達すると、ちょっとしたお楽しみとして特別なサウンドが流れます。ぜひご自身の耳で確かめてみてくださいね！</p></div>
+                </div>
+                <div class="faq-item fade-in-element">
+                    <button class="faq-question" aria-expanded="false">対応しているOSのバージョンは？</button>
+                    <div class="faq-answer"><p>OddEvenMergeは、iOS 17.3以降のiPhoneおよびiPadに対応しています。</p></div>
+                </div>
+            </div>
+        </section>
 
-<h2>よくあるご質問 (FAQ)</h2>
+        <section id="news" class="news-section content-section">
+            <div class="container">
+                <h2>最新情報・お知らせ</h2>
+                <article class="news-item fade-in-element">
+                    <h3>バージョン1.2リリース！(2025/05/13)</h3>
+                    <p>【起動が楽しく！ゲームオーバーもちょっと変化？アップデート】<br><br>
+                        いつもOddEvenMergeを遊んでくれてありがとう！<br>
+                        今回のアップデートでは、みんながもっとゲームを楽しめるように、いくつかの新しい変更と改善を加えたよ！<br><br>
+                        主なアップデート内容:<br>
+                        ・広告を見てコンティニューのルール変更！<br>
+                        「広告を見てタイルを消す」機能は、これまでの何度も使える形から、1回のゲームで1回だけ使えるように変更したよ。ここぞ！という時に使ってね！<br><br>
+                        ・ゲームオーバーのメッセージが変わるようになったよ！<br>
+                        みんなの頑張りに合わせて、ゲームオーバーの時のメッセージがスコアによって色々変わるようになったんだ。ハイスコア目指して、どんなメッセージが出るか見てみよう！<br><br>
+                        ・新しいスプラッシュスクリーンが登場！<br>
+                        アプリを起動するときに、ちょっとワクワクするような新しい画面でお出迎え！<br><br>
+                        ・ゲームオーバー画面が見やすくなったよ！<br>
+                        ボタンの配置や文字の大きさを調整して、もっと使いやすくなったんだ。<br><br>
+                        その他にも、細かいところを色々改善したよ！<br><br>
+                        これからもOddEvenMergeで、数字とパズルを思いっきり楽しんでね！<br>
+                        もし何か気づいたことや、面白いアイデアがあったら、ぜひレビューで教えてね。<br><br>
+                        みんなの挑戦を待ってるよ！</p>
+                </article>
+            </div>
+        </section>
 
-<ul>
-<li><strong>Q: 操作方法がわかりません。</strong>
-    <ul>
-    <li>A: 画面を上下左右にスワイプすると、全てのタイルがその方向に移動します。同じ数字（偶数同士または奇数同士）か、奇数と偶数の組み合わせのタイルが隣接すると、ルールに従って合体（マージ）します。</li>
-    </ul>
-</li>
-<li><strong>Q: ハプティクス（振動）が動作しません。</strong>
-    <ul>
-    <li>A: 本アプリの触覚フィードバック（ハプティクス）は、CoreHapticsに対応したデバイス（iPhone 8以降推奨）で最適に動作します。また、端末の「設定」&gt;「サウンドと触覚」で「システムハプティクス」がオンになっているかご確認ください。</li>
-    </ul>
-</li>
-<li><strong>Q: ハイスコアが保存されません。</strong>
-    <ul>
-    <li>A: ハイスコアは端末内に自動的に保存されます。アプリを完全に削除すると、ハイスコアもリセットされる場合があります。</li>
-    </ul>
-</li>
-</ul>
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>お問い合わせ</h2>
+                <p>ゲームに関するご意見、ご感想、不具合のご報告、メディア掲載に関するお問い合わせなどがございましたら、以下のメールアドレスもしくはX (旧Twitter) までお気軽にご連絡ください。</p>
+                <p>odd_even_merge_sup[at]gmail.com</p>
+                <div class="social-links">
+                    <a href="https://x.com/2n0k460" target="_blank" rel="noopener noreferrer" aria-label="X (旧Twitter)"><img src="images/X_logo_white.png" alt="X (旧Twitter)のロゴ"></a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<h2>お問い合わせ</h2>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Takeshi Asahara. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-<p>アプリに関するご質問、不具合のご報告、ご意見・ご感想などがございましたら、以下のいずれかの方法でお気軽にご連絡ください。</p>
-
-<ul>
-<li><strong>X:</strong> <a href="https://x.com/2n0k460">https://x.com/2n0k460</a></li>
-<li><strong>Email:</strong> odd.even.merge.sup[at]gmail.com</li>
-</ul>
-
-<p>※ お問い合わせの際は、ご利用の端末名、OSバージョン、アプリのバージョン、具体的な状況などを記載いただけますと、よりスムーズに対応できます。</p>
-
-<h2>プライバシーポリシー</h2>
-
-<p>アプリのプライバシーポリシーについては、以下のページをご確認ください。</p>
-
-<ul>
-<li><a href="https://2n0k460.github.io/OddEvenMerge_support/privacy.html">https://2n0k460.github.io/OddEvenMerge_support/privacy.html</a></li>
-</ul>
-
-<hr>
-
-<p><strong>開発者:</strong> 麻原 彪史 (Takeshi Asahara)</p>
-
-<hr>
-
-<h1>OddEvenMerge Support</h1>
-
-<p>Thank you for using "OddEvenMerge"!<br>
-This page provides support information for the app.</p>
-
-<h2>About the App</h2>
-
-<p>"OddEvenMerge" is a simple puzzle game where you swipe to merge numbered tiles. The unique feature is that the merge rules depend on whether the tile numbers are "Odd" or "Even".</p>
-
-<ul>
-<li><strong>Even + Even</strong> OR <strong>Odd + Odd</strong> → Merges into the same number</li>
-<li><strong>Odd + Even</strong> → Merges into the sum</li>
-</ul>
-
-<p>Aim for the high score and enjoy the game!</p>
-
-<h2>Frequently Asked Questions (FAQ)</h2>
-
-<ul>
-<li><strong>Q: How do I play?</strong>
-    <ul>
-    <li>A: Swipe up, down, left, or right on the screen to move all tiles in that direction. When tiles with the same number (both even or both odd) or a combination of an odd and an even number become adjacent, they will merge according to the rules.</li>
-    </ul>
-</li>
-<li><strong>Q: Haptics (vibration) aren't working.</strong>
-    <ul>
-    <li>A: The haptic feedback in this app works best on devices supporting CoreHaptics (iPhone 8 or later recommended). Please also ensure "System Haptics" is enabled in your device's "Settings" &gt; "Sounds &amp; Haptics".</li>
-    </ul>
-</li>
-<li><strong>Q: My high score isn't saving.</strong>
-    <ul>
-    <li>A: High scores are automatically saved locally on your device. If you completely delete the app, your high score might be reset.</li>
-    </ul>
-</li>
-</ul>
-
-<h2>Contact Us</h2>
-
-<p>If you have any questions, bug reports, feedback, or comments about the app, please feel free to contact us using one of the methods below:</p>
-
-<ul>
-<li><strong>X:</strong> <a href="https://x.com/2n0k460">https://x.com/2n0k460</a></li>
-<li><strong>Email:</strong> odd.even.merge.sup[at]gmail.com</li>
-</ul>
-
-<p><em>When contacting us, please include your device model, OS version, app version, and a detailed description of the situation, if possible. This will help us assist you more smoothly.</em></p>
-
-<h2>Privacy Policy</h2>
-
-<p>Please review the app's privacy policy on the following page:</p>
-
-<ul>
-<li><a href="https://2n0k460.github.io/OddEvenMerge_support/privacy.html">https://2n0k460.github.io/OddEvenMerge_support/privacy.html</a></li>
-</ul>
-
-<hr>
-
-<p><strong>Developer:</strong> Takeshi Asahara</p>
-
+    <script src="script.js"></script>
 </body>
 </html>
