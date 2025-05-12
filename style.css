@@ -1,8 +1,8 @@
 /* 基本スタイルとリセット */
 :root {
-    --odd-base-color: hsl(210, 75%, 58%); /* 奇数テーマ (鮮やかな青) */
-    --even-base-color: hsl(32, 100%, 62%); /* 偶数テーマ (鮮やかなオレンジ) */
-    --accent-color: hsl(165, 70%, 48%); /* アクセント (エメラルドグリーン系) */
+    --odd-base-color: #42A5F5; /* 奇数テーマ (鮮やかな青) */
+    --even-base-color: #FF7043;/* 偶数テーマ (鮮やかなオレンジ) */
+    --accent-color: #6A4FD1; /* アクセント (エメラルドグリーン系) */
     --text-color: #212529; /* 濃いグレー */
     --secondary-text-color: #6c757d; /* やや薄いグレー */
     --light-text-color: #f8f9fa; /* 明るいテキスト色 (ダーク背景用) */
