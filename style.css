@@ -317,7 +317,7 @@ section h2::after {
 .contact-section h2::after { background: linear-gradient(to right, var(--odd-base-color), var(--even-base-color)); }
 .contact-section p { opacity: 0.9; font-size: 1.05em; }
 .email-link { color: var(--accent-color); font-weight: 700; font-size: 1.1em; } /* 少し小さく */
-.email-link:hover { text-decoration: underline; color: hsl(165, 70%, 58%);}
+.email-link:hover { text-decoration: underline; color: #6A4FD1;}
 .social-links { margin-top: 20px; }
 .social-links a { margin: 0 10px; display: inline-block; }
 .social-links img { width: 28px; height: 28px; opacity: 0.75; transition: opacity 0.2s ease, transform 0.2s ease; }
