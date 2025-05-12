@@ -3,255 +3,309 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OddEvenMerge プライバシーポリシー / Privacy Policy</title>
+    <title>OddEvenMerge プライバシーポリシー</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/app-icon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 2em;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 1em;
-            border: 1px solid #eee;
-            border-radius: 8px;
+        /* privacy.html固有の微調整スタイル */
+        main {
+            padding-top: 30px; /* ヘッダーとのスペース */
+            padding-bottom: 50px;
         }
-        h1, h2 {
-            border-bottom: 1px solid #eee;
-            padding-bottom: 0.3em;
+        .privacy-content {
+            background-color: var(--white);
+            padding: 30px 40px;
+            border-radius: var(--border-radius-medium);
+            box-shadow: var(--box-shadow-soft);
+            margin-top: 30px; /* タイトルとのスペース */
         }
-        h1 {
-            font-size: 1.8em;
+        .privacy-content h2 {
+            font-size: 1.8em; /* 少し小さめに */
+            margin-top: 2em;
+            margin-bottom: 1em;
+            text-align: left; /* 左寄せに戻す */
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5em;
         }
-        h2 {
-            font-size: 1.4em;
-            margin-top: 1.5em;
+        .privacy-content h2::after {
+            display: none; /* セクションタイトルの下線は不要 */
         }
-        ul {
+        .privacy-content ul {
             padding-left: 1.5em;
-        }
-        li {
-            margin-bottom: 0.5em;
-        }
-        strong {
-            font-weight: bold;
-        }
-        p {
             margin-bottom: 1em;
         }
-        a {
-            color: #007bff;
+        .privacy-content li {
+            margin-bottom: 0.7em;
+        }
+        .privacy-content ul ul {
+            margin-top: 0.5em; /* 入れ子のリストのスペース調整 */
+        }
+        .privacy-content p {
+            margin-bottom: 1.2em;
+            line-height: 1.7;
+        }
+        .privacy-content a {
+            color: var(--odd-base-color); /* リンク色をテーマに合わせる */
             text-decoration: none;
+            font-weight: 500;
         }
-        a:hover {
+        .privacy-content a:hover {
             text-decoration: underline;
+            color: var(--even-base-color);
         }
-        hr {
+        .privacy-content hr {
             border: none;
-            border-top: 2px solid #eee;
-            margin: 2em 0;
+            border-top: 1px solid var(--border-color);
+            margin: 2.5em 0;
         }
         .lang-section {
             margin-bottom: 3em;
         }
-        .footer {
-            margin-top: 2em;
+        .footer-info { /* ポリシー内のフッター情報 */
+             margin-top: 2em;
+             font-size: 0.95em;
+             color: var(--secondary-text-color);
+        }
+         .privacy-title {
+            font-size: 2.5em;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 15px;
+            color: var(--text-color);
+         }
+         .update-date {
+            text-align: center;
+            color: var(--secondary-text-color);
             font-size: 0.9em;
-            color: #555;
+            margin-bottom: 30px;
+         }
+
+        /* スマホ表示用の調整 */
+        @media (max-width: 768px) {
+            .privacy-content {
+                padding: 20px 25px;
+            }
+            .privacy-title {
+                font-size: 2em;
+            }
+            .privacy-content h2 {
+                font-size: 1.5em;
+            }
         }
-        .disclaimer {
-             font-size: 0.8em;
-             color: #777;
-             margin-top: 1em;
-        }
-        /* Replace [at] with @ visually */
-        .email-link::after {
-            content: "odd.even.merge.sup@gmail.com";
-        }
+         @media (max-width: 480px) {
+            .privacy-content {
+                padding: 15px 20px;
+            }
+             .privacy-title {
+                font-size: 1.8em;
+            }
+            .privacy-content h2 {
+                font-size: 1.3em;
+            }
+         }
+
     </style>
 </head>
 <body>
+    <header>
+        <div class="container header-content">
+             <a href="index.html" style="display: contents; text-decoration: none; color: inherit;"> <img src="images/app-icon.png" alt="OddEvenMerge アプリアイコン" class="app-icon-header">
+                <div>
+                    <h1>OddEvenMerge</h1>
+                    <p class="tagline">奇数と偶数が織りなす、新感覚マージパズル！</p>
+                </div>
+             </a>
+        </div>
+         </header>
 
-    <div class="lang-section" lang="ja">
-        <h1>OddEvenMerge プライバシーポリシー</h1>
+    <main>
+        <div class="container">
+            <h1 class="privacy-title">OddEvenMerge プライバシーポリシー</h1>
+            <p class="update-date">
+                制定日: 2025年5月5日 | 最終改定日: 2025年5月5日
+            </p>
 
-        <p>
-            制定日: 2025年5月5日<br>
-            最終改定日: 2025年5月5日
-        </p>
+            <div class="privacy-content">
 
-        <p>麻原 彪史（以下、「開発者」といいます）は、開発者が提供するiOS向けアプリケーション「OddEvenMerge」（以下、「本アプリ」といいます）における利用者情報の取り扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます）を定めます。</p>
+                <div class="lang-section" lang="ja">
 
-        <h2>1. 取得する情報</h2>
+                    <p>Takeshi Asahara（以下、「開発者」といいます）は、開発者が提供するiOS向けアプリケーション「OddEvenMerge」（以下、「本アプリ」といいます）における利用者情報の取り扱いについて、以下のとおりプライバシーポリシー（以下、「本ポリシー」といいます）を定めます。</p>
 
-        <p>本アプリにおいて、以下の利用者情報を取得する場合があります。</p>
-        <ul>
-            <li>
-                <strong>端末内に保存される情報（個人を特定しない情報）:</strong>
-                <ul>
-                    <li>ゲームのスコア、ハイスコア、ゲームの進行状況</li>
-                    <li>これらは本アプリ内での機能提供のために端末内に保存され、開発者が収集することはありません。</li>
-                </ul>
-            </li>
-            <li>
-                <strong>広告配信のための情報（Google AdMob SDKにより収集される可能性のある情報）:</strong>
-                <ul>
-                    <li>広告ID（IDFA等、ユーザーの許可に基づき取得）</li>
-                    <li>端末情報（機種名、OSバージョン等）</li>
-                    <li>おおよその位置情報（IPアドレス等から推定）</li>
-                    <li>広告の表示・クリック等の操作に関する情報</li>
-                    <li>これらの情報は、Google LLCが提供する広告配信サービス「Google AdMob」のSDKを通じて、同社のプライバシーポリシーに基づき収集・利用される場合があります。個人を直接特定する情報（氏名、メールアドレス等）を開発者が意図的に取得することはありません。</li>
-                </ul>
-            </li>
-        </ul>
+                    <h2>1. 取得する情報</h2>
 
-        <h2>2. 利用目的</h2>
+                    <p>本アプリにおいて、以下の利用者情報を取得する場合があります。</p>
+                    <ul>
+                        <li>
+                            <strong>端末内に保存される情報（個人を特定しない情報）:</strong>
+                            <ul>
+                                <li>ゲームのスコア、ハイスコア、ゲームの進行状況</li>
+                                <li>これらは本アプリ内での機能提供のために端末内に保存され、開発者が収集することはありません。</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>広告配信のための情報（Google AdMob SDKにより収集される可能性のある情報）:</strong>
+                            <ul>
+                                <li>広告ID（IDFA等、ユーザーの許可に基づき取得）</li>
+                                <li>端末情報（機種名、OSバージョン等）</li>
+                                <li>おおよその位置情報（IPアドレス等から推定）</li>
+                                <li>広告の表示・クリック等の操作に関する情報</li>
+                                <li>これらの情報は、Google LLCが提供する広告配信サービス「Google AdMob」のSDKを通じて、同社のプライバシーポリシーに基づき収集・利用される場合があります。個人を直接特定する情報（氏名、メールアドレス等）を開発者が意図的に取得することはありません。</li>
+                            </ul>
+                        </li>
+                    </ul>
 
-        <p>取得した情報は、以下の目的で利用します。</p>
-        <ul>
-            <li>本アプリの機能提供（スコア表示、ゲーム進行状況の保存等）のため</li>
-            <li>本アプリの利用状況分析、サービス改善のため（個人を特定しない範囲で）</li>
-            <li>利用者に適した広告を配信するため（Google AdMobによる）</li>
-            <li>広告の効果測定のため（Google AdMobによる）</li>
-            <li>お問い合わせへの対応のため（利用者が任意で提供した場合）</li>
-        </ul>
+                    <h2>2. 利用目的</h2>
 
-        <h2>3. 第三者提供</h2>
+                    <p>取得した情報は、以下の目的で利用します。</p>
+                    <ul>
+                        <li>本アプリの機能提供（スコア表示、ゲーム進行状況の保存等）のため</li>
+                        <li>本アプリの利用状況分析、サービス改善のため（個人を特定しない範囲で）</li>
+                        <li>利用者に適した広告を配信するため（Google AdMobによる）</li>
+                        <li>広告の効果測定のため（Google AdMobによる）</li>
+                        <li>お問い合わせへの対応のため（利用者が任意で提供した場合）</li>
+                    </ul>
 
-        <p>開発者は、以下の場合を除き、利用者情報を第三者に提供することはありません。</p>
-        <ul>
-            <li>法令に基づく場合</li>
-            <li>利用者から事前に同意を得た場合</li>
-            <li>広告配信のため、広告配信事業者（Google LLC）に情報が提供される場合（本ポリシー第1条参照）。提供される情報および利用目的については、Google LLCのプライバシーポリシーをご確認ください。
-                <ul>
-                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google ポリシーと規約 - プライバシー ポリシー</a></li>
-                    <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob と Google Ad Manager に関するポリシー</a></li>
-                </ul>
-            </li>
-        </ul>
+                    <h2>3. 第三者提供</h2>
 
-        <h2>4. 情報の収集停止・削除</h2>
+                    <p>開発者は、以下の場合を除き、利用者情報を第三者に提供することはありません。</p>
+                    <ul>
+                        <li>法令に基づく場合</li>
+                        <li>利用者から事前に同意を得た場合</li>
+                        <li>広告配信のため、広告配信事業者（Google LLC）に情報が提供される場合（本ポリシー第1条参照）。提供される情報および利用目的については、Google LLCのプライバシーポリシーをご確認ください。
+                            <ul>
+                                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google ポリシーと規約 - プライバシー ポリシー</a></li>
+                                <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob と Google Ad Manager に関するポリシー</a></li>
+                            </ul>
+                        </li>
+                    </ul>
 
-        <ul>
-            <li><strong>広告ID:</strong> 利用者は、iOS端末の設定により、広告IDの利用を制限（オプトアウト）したり、リセットしたりすることができます。</li>
-            <li><strong>本アプリのアンインストール:</strong> 本アプリをアンインストールした場合、端末内に保存されたゲームデータは削除されます。Google AdMobが収集した情報については、上記のGoogleのポリシーをご確認ください。</li>
-        </ul>
+                    <h2>4. 情報の収集停止・削除</h2>
 
-        <h2>5. お子様のプライバシー</h2>
+                    <ul>
+                        <li><strong>広告ID:</strong> 利用者は、iOS端末の設定により、広告IDの利用を制限（オプトアウト）したり、リセットしたりすることができます。</li>
+                        <li><strong>本アプリのアンインストール:</strong> 本アプリをアンインストールした場合、端末内に保存されたゲームデータは削除されます。Google AdMobが収集した情報については、上記のGoogleのポリシーをご確認ください。</li>
+                    </ul>
 
-        <p>本アプリは、13歳未満のお子様を主な対象として意図されたものではありません。13歳未満と思われる利用者から意図的に個人情報を収集することはありません。</p>
+                    <h2>5. お子様のプライバシー</h2>
 
-        <h2>6. プライバシーポリシーの変更</h2>
+                    <p>本アプリは、13歳未満のお子様を主な対象として意図されたものではありません。13歳未満と思われる利用者から意図的に個人情報を収集することはありません。</p>
 
-        <p>開発者は、法令の変更やサービスの改善に伴い、本ポリシーを改定することがあります。重要な変更がある場合は、本アプリ内またはサポートページ等でお知らせします。最新のプライバシーポリシーはこのページでご確認ください。</p>
+                    <h2>6. プライバシーポリシーの変更</h2>
 
-        <h2>7. お問い合わせ窓口</h2>
+                    <p>開発者は、法令の変更やサービスの改善に伴い、本ポリシーを改定することがあります。重要な変更がある場合は、本アプリ内またはサポートページ等でお知らせします。最新のプライバシーポリシーはこのページでご確認ください。</p>
 
-        <p>本ポリシーに関するご質問、利用者情報の取り扱いに関するお問い合わせは、以下の連絡先までお願いいたします。</p>
-        <ul>
-            <li><strong>X:</strong> <a href="https://x.com/2n0k460" target="_blank" rel="noopener noreferrer">https://x.com/2n0k460</a></li>
-            <li><strong>Email:</strong><p>odd.even.merge.sup[at]gmail.com</p></li>
-        </ul>
+                    <h2>7. お問い合わせ窓口</h2>
 
-        <hr style="border: none; border-top: 1px solid #eee; margin: 1.5em 0;">
+                    <p>本ポリシーに関するご質問、利用者情報の取り扱いに関するお問い合わせは、以下の連絡先までお願いいたします。</p>
+                    <ul>
+                        <li><strong>X (旧Twitter):</strong> <a href="https://x.com/2n0k460" target="_blank" rel="noopener noreferrer">@2n0k460</a></li>
+                        <li><strong>Email:</strong> odd.even.merge.sup[at]gmail.com</li>
+                    </ul>
 
-        <p class="footer">
-            <strong>開発者:</strong> 麻原 彪史 (Takeshi Asahara)
-        </p>
-    </div>
+                    <p class="footer-info">
+                        <strong>開発者:</strong> Takeshi Asahara
+                    </p>
+                </div>
 
-    <hr>
+                <hr>
 
-    <div class="lang-section" lang="en">
-        <h1>OddEvenMerge Privacy Policy</h1>
+                 <div class="lang-section" lang="en">
+                    <h2>Privacy Policy (English)</h2>
+                    <p>
+                         <strong>Effective Date:</strong> May 6, 2025<br>
+                         <strong>Last Updated:</strong> May 6, 2025
+                     </p>
 
-        <p>
-            <strong>Effective Date:</strong> May 6, 2025<br>
-            <strong>Last Updated:</strong> May 6, 2025
-        </p>
+                     <p>Takeshi Asahara ("Developer," "we," "us," or "our") operates the iOS application "OddEvenMerge" (the "Application" or "App"). This Privacy Policy outlines how we handle user information within the Application.</p>
 
-        <p>Takeshi Asahara ("Developer," "we," "us," or "our") operates the iOS application "OddEvenMerge" (the "Application" or "App"). This Privacy Policy outlines how we handle user information within the Application.</p>
+                     <h2>1. Information We Collect</h2>
 
-        <h2>1. Information We Collect</h2>
+                     <p>We may collect the following types of information in connection with the Application:</p>
+                     <ul>
+                         <li>
+                             <strong>Information Stored Locally on Your Device (Non-Personal Data):</strong>
+                             <ul>
+                                 <li>Game score, high score, and game progress status.</li>
+                                 <li>This data is stored solely on your device to enable app functionality and is not collected by the Developer.</li>
+                             </ul>
+                         </li>
+                         <li>
+                             <strong>Information for Advertising (Potentially collected via Google AdMob SDK):</strong>
+                             <ul>
+                                 <li>Advertising Identifier (IDFA, based on user permission).</li>
+                                 <li>Device Information (e.g., device model, operating system version).</li>
+                                 <li>Approximate Location Information (e.g., derived from IP address).</li>
+                                 <li>Information about ad interactions (e.g., views, clicks).</li>
+                                 <li>This information may be collected through the Google AdMob Software Development Kit (SDK), provided by Google LLC, according to their privacy policy. The Developer does not intentionally collect directly identifiable personal information (such as name, email address, etc.).</li>
+                             </ul>
+                         </li>
+                     </ul>
 
-        <p>We may collect the following types of information in connection with the Application:</p>
-        <ul>
-            <li>
-                <strong>Information Stored Locally on Your Device (Non-Personal Data):</strong>
-                <ul>
-                    <li>Game score, high score, and game progress status.</li>
-                    <li>This data is stored solely on your device to enable app functionality and is not collected by the Developer.</li>
-                </ul>
-            </li>
-            <li>
-                <strong>Information for Advertising (Potentially collected via Google AdMob SDK):</strong>
-                <ul>
-                    <li>Advertising Identifier (IDFA, based on user permission).</li>
-                    <li>Device Information (e.g., device model, operating system version).</li>
-                    <li>Approximate Location Information (e.g., derived from IP address).</li>
-                    <li>Information about ad interactions (e.g., views, clicks).</li>
-                    <li>This information may be collected through the Google AdMob Software Development Kit (SDK), provided by Google LLC, according to their privacy policy. The Developer does not intentionally collect directly identifiable personal information (such as name, email address, etc.).</li>
-                </ul>
-            </li>
-        </ul>
+                     <h2>2. How We Use Information</h2>
 
-        <h2>2. How We Use Information</h2>
+                     <p>We use the collected information for the following purposes:</p>
+                     <ul>
+                         <li>To provide the Application's features (e.g., displaying scores, saving game progress).</li>
+                         <li>To analyze usage patterns and improve the Application (using non-identifying data).</li>
+                         <li>To serve relevant advertisements to users (via Google AdMob).</li>
+                         <li>To measure the effectiveness of advertising (via Google AdMob).</li>
+                         <li>To respond to user inquiries (if contact information is voluntarily provided by the user).</li>
+                     </ul>
 
-        <p>We use the collected information for the following purposes:</p>
-        <ul>
-            <li>To provide the Application's features (e.g., displaying scores, saving game progress).</li>
-            <li>To analyze usage patterns and improve the Application (using non-identifying data).</li>
-            <li>To serve relevant advertisements to users (via Google AdMob).</li>
-            <li>To measure the effectiveness of advertising (via Google AdMob).</li>
-            <li>To respond to user inquiries (if contact information is voluntarily provided by the user).</li>
-        </ul>
+                     <h2>3. Information Sharing with Third Parties</h2>
 
-        <h2>3. Information Sharing with Third Parties</h2>
+                     <p>We do not share user information with third parties, except in the following cases:</p>
+                     <ul>
+                         <li>When required by law.</li>
+                         <li>When we have obtained the user's prior consent.</li>
+                         <li>When information is provided to advertising partners (Google LLC) for the purpose of serving ads (see Section 1). For details on the information provided and its use, please refer to Google LLC's privacy policy:
+                             <ul>
+                                 <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy & Terms – Privacy Policy</a></li>
+                                 <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Policies for Google AdMob & Google Ad Manager</a></li>
+                             </ul>
+                         </li>
+                     </ul>
 
-        <p>We do not share user information with third parties, except in the following cases:</p>
-        <ul>
-            <li>When required by law.</li>
-            <li>When we have obtained the user's prior consent.</li>
-            <li>When information is provided to advertising partners (Google LLC) for the purpose of serving ads (see Section 1). For details on the information provided and its use, please refer to Google LLC's privacy policy:
-                <ul>
-                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy & Terms – Privacy Policy</a></li>
-                    <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Policies for Google AdMob & Google Ad Manager</a></li>
-                </ul>
-            </li>
-        </ul>
+                     <h2>4. Opting Out and Data Deletion</h2>
 
-        <h2>4. Opting Out and Data Deletion</h2>
+                     <ul>
+                         <li><strong>Advertising Identifier:</strong> Users can limit the use of or reset their Advertising Identifier through their iOS device settings.</li>
+                         <li><strong>Uninstalling the Application:</strong> Uninstalling the Application will delete game data stored locally on the device. For information collected by Google AdMob, please refer to Google's policies linked above.</li>
+                     </ul>
 
-        <ul>
-            <li><strong>Advertising Identifier:</strong> Users can limit the use of or reset their Advertising Identifier through their iOS device settings.</li>
-            <li><strong>Uninstalling the Application:</strong> Uninstalling the Application will delete game data stored locally on the device. For information collected by Google AdMob, please refer to Google's policies linked above.</li>
-        </ul>
+                     <h2>5. Children's Privacy</h2>
 
-        <h2>5. Children's Privacy</h2>
+                     <p>The Application is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
 
-        <p>The Application is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+                     <h2>6. Changes to This Privacy Policy</h2>
 
-        <h2>6. Changes to This Privacy Policy</h2>
+                     <p>We may update this Privacy Policy from time to time due to changes in laws or service improvements. Significant changes will be notified within the Application or on the support page. Please review the latest Privacy Policy on this page.</p>
 
-        <p>We may update this Privacy Policy from time to time due to changes in laws or service improvements. Significant changes will be notified within the Application or on the support page. Please review the latest Privacy Policy on this page.</p>
+                     <h2>7. Contact Information</h2>
 
-        <h2>7. Contact Information</h2>
+                     <p>If you have any questions about this Privacy Policy or the handling of user information, please contact us at:</p>
+                     <ul>
+                          <li><strong>X (formerly Twitter):</strong> <a href="https://x.com/2n0k460" target="_blank" rel="noopener noreferrer">@2n0k460</a></li>
+                          <li><strong>Email:</strong> odd.even.merge.sup[at]gmail.com</li>
+                     </ul>
 
-        <p>If you have any questions about this Privacy Policy or the handling of user information, please contact us at:</p>
-        <ul>
-            <li><strong>X:</strong> <a href="https://x.com/2n0k460" target="_blank" rel="noopener noreferrer">https://x.com/2n0k460</a></li>
-            <li><strong>Email:</strong><p>odd.even.merge.sup[at]gmail.com</p></li>
-        </ul>
+                     <p class="footer-info">
+                         <strong>Developer:</strong> Takeshi Asahara
+                     </p>
+                </div>
 
-        <hr style="border: none; border-top: 1px solid #eee; margin: 1.5em 0;">
+            </div>
+        </div>
+    </main>
 
-        <p class="footer">
-            <strong>Developer:</strong> Takeshi Asahara
-        </p>
-        <p class="disclaimer">
-            <em>(Disclaimer: This Privacy Policy is provided as a template for informational purposes and does not constitute legal advice. You should consult with a legal professional to ensure compliance with applicable laws and regulations.)</em>
-        </p>
-    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Takeshi Asahara. All Rights Reserved.</p>
+            </div>
+    </footer>
 
-</body>
+    </body>
 </html>
